@@ -1,53 +1,101 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
 }
 
+@font-face {
+  font-family: "rock_saltregular";
+  src: url("RockSalt-webfont.eot");
+  src: url("RockSalt-webfont.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothic_ultra_otregular';
+  src: url('gothic_ultra_ot-webfont.eot');
+  src: url('gothic_ultra_ot-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'deutsch_gothicnormal';
+  src: url('Deutsch-webfont.eot');
+  src: url('Deutsch-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/****** MOBILE ******/
+
 body {
-  height: 100vh;
-  width: 100vw;
   display: grid;
+  row-gap: 5vw;
   grid-template:
-    "lb h rb"
-    "s s s";
+    "h h h"
+    "s s s"
+    "f f f";
+  background-color: black;
+  color: white;
 }
 
 header {
   grid-area: h;
   position: sticky;
   top: 0;
-  background-color: blue;
+  background-color: black;
   height: 10vh;
-  width: 60vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  box-shadow: 0 5px 30px black;
+  font-family: deutsch_gothicnormal;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .navButton {
   border: none;
-  grid-area: lb;
-  background-color: red;
-  position: sticky;
-  top: 0;
   height: 10vh;
   width: 20vw;
+  background-color: black;
+  background-image: url(assets/icone_bat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8vh;
+}
+
+.playerButton {
+  border: none;
+  height: 10vh;
+  width: 20vw;
+  background-color: black;
+  background-image: url(assets/icone_play.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 6vh;
 }
 
 nav {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 10vh;
-  left: 0;
-  background-color: red;
+  left: 5vh;
+  background-color: rgb(32, 31, 28);
   width: 40%;
   height: 50%;
-  z-index: 1;
+  border: solid rgb(165, 161, 161) 0.2rem;
+  border-radius: 1.5rem;
+  /* box-shadow: 0 0 10px, inset 0 0 10px; */
 }
 
 ul {
@@ -59,34 +107,217 @@ ul {
   height: 100%;
 }
 
-#about {
+section {
   grid-area: s;
-  background-color: yellow;
-}
-
-.playerButton {
-  border: none;
-  grid-area: rb;
-  background-color: green;
-  position: sticky;
-  top: 0;
-  height: 10vh;
-  width: 20vw;
+  padding: 0 5%;
+  text-align: justify;
+  font-family: gothic_ultra_otregular;
+  font-size: 1.8rem;
 }
 
 aside {
-    display: none;
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    background-color: green;
-    width: 40%;
-    height: 50%;
-    z-index: 1;
+  display: none;
+  position: fixed;
+  top: 12vh;
+  right: 5vh;
+  background-color: rgb(32, 31, 28);
+  width: 80%;
+  height: 80%;
+  border: solid rgb(165, 161, 161) 0.2rem;
+  border-radius: 1.5rem;
+  /* box-shadow: 0 0 10px, inset 0 0 10px; */
+  overflow-y: scroll;
+}
+
+audio {
+  width: 80%;
+  padding: 10%;
+  border-radius: 1.2rem;
 }
 
 footer {
-  display: none;
-  background-color: purple;
+  grid-area: f;
+  padding: 0 5%;
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/****** TABLET ******/
+
+@media (min-width: 768px) {
+  body {
+    grid-template:
+      "h h h"
+      "f s s"
+      "f s s";
+    row-gap: 5vh;
+  }
+  header {
+    display: grid;
+    grid-template:
+      "nb h1"
+      "pb h1";
+    row-gap: 0;
+    column-gap: 0;
+    height: 20vh;
+    padding: 1vh 0;
+  }
+  .navButton {
+    grid-area: nb;
+    width: 15vw;
+  }
+  .playerButton {
+    grid-area: pb;
+    width: 15vw;
+  }
+  h1 {
+    grid-area: h1;
+    width: 85vw;
+    text-align: center;
+    font-size: 4rem;
+  }
+  section {
+    padding: 5vh 5vw;
+    width: 75vw;
+  }
+
+  nav {
+    left: 13vw;
+  }
+
+  aside {
+    left: 17vw;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    height: 80vh;
+    width: 15vw;
+    padding: 1vh 0;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .links * {
+    padding: 1vh 0;
+  }
+  .ccIcon,
+  .shareIcon,
+  .mailIcon,
+  .facebookIcon {
+    width: 5vw;
+  }
+}
+
+/****** DESKTOP ******/
+
+@media (min-width: 1440px) {
+
+  body {
+  display: grid;
+  grid-template:
+    "n h a"
+    "n s a"
+    "n f a";
+  }
+  .navButton {
+    display: none;
+  }
+  .playerButton {
+    display: none;
+  }
+  header {
+    grid-area: h;
+    height: 17vh;
+    width: 60vw;
+  }
+
+  h1 {
+    text-align: center;
+    width: 60vw;
+    font-size: 8rem;
+  }
+
+  nav {
+    display: block;
+    grid-area: n;
+    position: sticky;
+    top: 5vh;
+    left: 0;
+    height: 50vh;
+    width: 15vw;
+    border-style: none;
+    box-shadow: none;
+    padding: 2.5vh;
+    background-color: transparent;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  li {
+    height: 5vh;
+    width: 10vw;
+    background-color: rgb(32, 31, 28);
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 0.5rem;
+  }
+
+  section {
+    width: 50vw;
+    padding-top: 0;
+    font-size: 2rem;
+  }
+
+  aside {
+    display: block;
+    grid-area: a;
+    position: sticky;
+    top: 5vh;
+    right: 0;
+    height: 50vh;
+    width: 15vw;
+    border-style: none;
+    box-shadow: none;
+    padding: 2.5vh;
+    background-color: rgb(32, 31, 28);
+    border-radius: 0.5rem;
+  }
+
+  audio {
+    padding: 1vh 0;
+    width: 100%;
+  }
+
+  footer {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    width: 60vw;  
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .links * {
+    padding: 0 1vw;
+  }
 }

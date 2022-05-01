@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="body" onresize="view()">
     <header>
+      <input class="navButton" type="button" />
       <h1>unleash the bats</h1>
+      <input class="playerButton" type="button" />
     </header>
     <nav id="nav">
       <ul>
@@ -19,9 +21,6 @@
         <li>redemption</li>
       </ul>
     </nav>
-    <input class="navButton"
-       type="button"
-       value="nav">
 
     <section id="about">
       <p>
@@ -63,13 +62,27 @@
         voluptas numquam iure quam earum corrupti rerum. Facilis!
       </p>
     </section>
-    <input class="playerButton"
-       type="button"
-       value="player">
-    <aside id="aside"></aside>
+
+    <aside id="aside">
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+      <audio controls>Your browser does not support the audio element.</audio>
+    </aside>
+
     <footer>
-      <div class="CC"></div>
-      <div class="links"></div>
+      <div class="CC">
+        <img class="ccIcon" src="/assets/icones_CC.png" alt="" />
+      </div>
+      <div class="links">
+        <img class="shareIcon" src="/assets/icones_partage.png" alt="" />
+        <img class="mailIcon" src="/assets/icones_mail.png" alt="" />
+        <img class="facebookIcon" src="/assets/icones_facebook.png" alt="" />
+      </div>
     </footer>
     <script src="index.js"></script>
   </body>
