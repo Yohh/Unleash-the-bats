@@ -38,7 +38,15 @@
   font-style: normal;
 }
 
-/****** MOBILE ******/
+/*
+*
+*
+*
+************* MOBILE *************
+*
+*
+*
+*/
 
 body {
   display: grid;
@@ -50,6 +58,12 @@ body {
   background-color: black;
   color: white;
 }
+
+/*
+*
+******** header ********
+*
+*/
 
 header {
   grid-area: h;
@@ -90,6 +104,12 @@ h1 {
   background-size: 6vh;
 }
 
+/*
+*
+******** nav ********
+*
+*/
+
 nav {
   display: none;
   position: fixed;
@@ -101,6 +121,8 @@ nav {
   border: solid rgb(165, 161, 161) 0.2rem;
   border-radius: 1.5rem;
   /* box-shadow: 0 0 10px, inset 0 0 10px; */
+  font-family: deutsch_gothicnormal;
+  font-size: 2rem;
 }
 
 ul {
@@ -111,6 +133,12 @@ ul {
   list-style-type: none;
   height: 100%;
 }
+
+/*
+*
+******** section ********
+*
+*/
 
 section {
   grid-area: s;
@@ -153,6 +181,12 @@ section {
   font-size: 20px;
 }
 
+/*
+*
+******** aside ********
+*
+*/
+
 aside {
   display: none;
   position: fixed;
@@ -173,6 +207,12 @@ audio {
   border-radius: 1.2rem;
 }
 
+/*
+*
+******** footer ********
+*
+*/
+
 footer {
   grid-area: f;
   padding: 0 5%;
@@ -181,7 +221,15 @@ footer {
   justify-content: space-between;
 }
 
-/****** TABLET ******/
+/*
+*
+*
+*
+************* TABLET *************
+*
+*
+*
+*/
 
 @media (min-width: 768px) {
   body {
@@ -191,6 +239,13 @@ footer {
       "f s s";
     row-gap: 5vh;
   }
+
+  /*
+*
+******** header ********
+*
+*/
+
   header {
     display: grid;
     grid-template:
@@ -215,6 +270,23 @@ footer {
     text-align: center;
     font-size: 4rem;
   }
+
+  /*
+*
+******** nav ********
+*
+*/
+
+  nav {
+    left: 13vw;
+  }
+
+  /*
+*
+******** section ********
+*
+*/
+
   section {
     padding: 5vh 5vw;
     width: 75vw;
@@ -234,13 +306,21 @@ footer {
     width: 60vw;
   }
 
-  nav {
-    left: 13vw;
-  }
+  /*
+*
+******** aside ********
+*
+*/
 
   aside {
     left: 17vw;
   }
+
+  /*
+*
+******** footer ********
+*
+*/
 
   footer {
     position: fixed;
@@ -269,7 +349,15 @@ footer {
   }
 }
 
-/****** DESKTOP ******/
+/*
+*
+*
+*
+************* DESKTOP *************
+*
+*
+*
+*/
 
 @media (min-width: 1440px) {
   body {
@@ -285,6 +373,13 @@ footer {
   .playerButton {
     display: none;
   }
+
+  /*
+*
+******** header ********
+*
+*/
+
   header {
     position: relative;
     grid-area: h;
@@ -297,6 +392,12 @@ footer {
     width: 60vw;
     font-size: 8rem;
   }
+
+  /*
+*
+******** nav ********
+*
+*/
 
   nav {
     display: block;
@@ -328,6 +429,12 @@ footer {
     border-radius: 0.5rem;
   }
 
+  /*
+*
+******** section ********
+*
+*/
+
   section {
     width: 50vw;
     padding-top: 0;
@@ -347,7 +454,14 @@ footer {
 
   #anonyme {
     width: 25vw;
+    font-size: 30px;
   }
+
+  /*
+*
+******** aside ********
+*
+*/
 
   aside {
     display: block;
@@ -368,6 +482,12 @@ footer {
     padding: 1vh 0;
     width: 100%;
   }
+
+  /*
+*
+******** footer ********
+*
+*/
 
   footer {
     position: sticky;
