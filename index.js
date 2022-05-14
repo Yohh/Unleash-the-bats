@@ -6,6 +6,7 @@
 //
 //
 const body = document.querySelector("body");
+//
 const lButton = document.querySelector(".navButton");
 const nav = document.getElementById("nav");
 //
@@ -71,5 +72,10 @@ function view() {
   } else if (window.innerWidth < 1440) {
     nav.style.display = "none";
     aside.style.display = "none";
+    lButton.addEventListener("click", updateLeftButton);
+    rButton.addEventListener("click", updateRightButton);
+    reset1.addEventListener("click", resetButtons);
+    reset2.addEventListener("click", resetButtons);
+    reset3.addEventListener("click", resetButtons);
   }
 }

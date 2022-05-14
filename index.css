@@ -17,7 +17,7 @@ a:link {
 }
 
 a:visited {
-  color: #9ea383;
+  color: #ffffff;
 }
 
 a:hover {
@@ -26,15 +26,6 @@ a:hover {
 
 a:focus {
   color: #504912;
-}
-
-@font-face {
-  font-family: "rock_saltregular";
-  src: url("RockSalt-webfont.eot");
-  src: url("RockSalt-webfont.woff") format("woff");
-
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
@@ -72,7 +63,7 @@ body {
     "h h h"
     "s s s"
     "f f f";
-    background-color: black;
+  background-color: black;
   color: white;
 }
 
@@ -205,12 +196,11 @@ section {
   font-size: 20px;
 }
 
-
-#history *{
+#history * {
   margin-top: 5vh;
 }
 
-#history .h_text {
+#history .htext {
   border-radius: 1rem;
   padding: 2vh;
 }
@@ -246,17 +236,58 @@ aside {
   z-index: 1;
 }
 
-aside p {
+aside div {
   margin-top: 2vh;
+  padding: 2vh;
+  height: 15vh;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: 20vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.logoPlayer {
-  max-width: 40vw;
+aside p {
+  background-color: #000000cb;
+}
+
+#cure {
+  background-image: url(/assets/logos/logo_the_cure.jpg);
+}
+
+#siouxie {
+  background-image: url(/assets/logos/logo_siouxie.jpg);
+}
+
+#bauhaus {
+  background-image: url(/assets/logos/logo_bauhaus.jpg);
+}
+
+#christian {
+  background-image: url(/assets/logos/logo_christian_death.jpg);
+}
+
+#joy {
+  background-image: url(/assets/logos/logo_joy_division.jpg);
+}
+
+#rosa {
+  background-image: url(/assets/logos/logo_rosa_crux.jpg);
+}
+
+#sopor {
+  background-image: url(/assets/logos/logo_sopor_aeternus.jpg);
+}
+
+#cinema {
+  background-image: url(/assets/logos/logo_cinema_strange.jpg);
 }
 
 audio {
   width: 80%;
-  padding: 10%;
+  padding: 0 10%;
   border-radius: 1.2rem;
 }
 
@@ -377,6 +408,26 @@ footer {
     width: 60vw;
   }
 
+  #history * {
+    margin-top: 8vh;
+  }
+
+  #history .htext {
+    background-color: rgb(32, 31, 28, 0.7);
+    box-shadow: 0 0 20px black;
+  }
+
+  #history .himg {
+    width: 40vw;
+    border: solid 1vh rgb(32, 31, 28);
+    box-shadow: 0 0 20px black;
+    border-radius: 50;
+  }
+
+  #history .bat {
+    width: 10vw;
+  }
+
   /*
 *
 ******** aside ********
@@ -385,6 +436,12 @@ footer {
 
   aside {
     left: 17vw;
+  }
+
+  aside div {
+    padding: 2vh;
+    height: 25vh;
+    background-size: 30vh;
   }
 
   /*
@@ -529,6 +586,62 @@ footer {
     font-size: 30px;
   }
 
+  #history {
+    display: grid;
+    grid-template:
+      "hp1 hp2"
+      "himg1 himg1"
+      "hp3 hp4"
+      "himg2 himg2"
+      "hp5 hp5"
+      "himg3 himg3";
+  }
+
+  #hp1 {
+    grid-area: hp1;
+  }
+
+  #hp2 {
+    grid-area: hp2;
+  }
+
+  #hp3 {
+    grid-area: hp3;
+  }
+
+  #hp4 {
+    grid-area: hp4;
+  }
+
+  #hp5 {
+    grid-area: hp5;
+  }
+
+  #himg1 {
+    grid-area: himg1;
+  }
+
+  #himg2 {
+    grid-area: himg2;
+  }
+
+  #himg3 {
+    grid-area: himg3;
+  }
+
+  .bat {
+    display: none;
+  }
+
+  .htext {
+    margin: 0 2vh;
+    height: 90%;
+  }
+
+  .himg {
+    margin: 0 10%;
+  }
+
   /*
 *
 ******** aside ********
@@ -547,6 +660,10 @@ footer {
     border-style: none;
     background-color: rgb(32, 31, 28);
     border-radius: 0.5rem;
+  }
+
+  aside div {
+    background-size: 20vh;
   }
 
   audio {

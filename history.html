@@ -33,7 +33,7 @@
     </nav>
 
     <section id="history">
-      <p class="h_text">
+      <p class="htext" id="hp1">
         Le post-punk est un genre musical apparu vers la fin des années 1970, en
         écho à la déferlante punk marquée par un certain radicalisme, et souvent
         associé au mouvement new wave. Représenté par des groupes emblématiques
@@ -43,10 +43,13 @@
         pour l'expérimentation musicale et sa plus grande élaboration.
       </p>
       <img
-        src="/assets/siouxie_and_the_banshees.jpg"
+        class="himg"
+        src="/assets/pictures/siouxie_and_the_banshees.jpg"
         alt="Siouxie and the Banshees"
+        title="Siouxie and the Banshees"
+        id="himg1"
       />
-      <p class="h_text">
+      <p class="htext" id="hp2">
         La posture générale des artistes rattachés à la mouvance post-punk peut
         se résumer dans cette déclaration de Allen Ravenstine de Pere Ubu en
         1978 : « Les Sex Pistols chantent No Future, mais il y a un futur et
@@ -56,7 +59,7 @@
         le rock industriel, le rock indépendant ou le rock alternatif.
       </p>
       <img class="bat" src="/assets/trans_bat.png" alt="bat" />
-      <p class="h_text">
+      <p class="htext" id="hp3">
         Jon Savage et Nick Kent, travaillant respectivement pour les
         hebdomadaires anglais Sounds et le NME, sont les premiers à utiliser le
         terme post-punk à la fin des années 1970. Pour l'historien et
@@ -70,8 +73,14 @@
         le tout premier concert des Banshees était « proto post punk » avec une
         « section rythmique hypnotique ».
       </p>
-      <img src="/assets/joy_division.jpg" alt="Joy Division" />
-      <p class="h_text">
+      <img
+        class="himg"
+        src="/assets/pictures/joy_division.jpg"
+        alt="Joy Division"
+        title="Joy Division"
+        id="himg2"
+      />
+      <p class="htext" id="hp4">
         La posture revendiquée par des figures emblématiques du post-punk, comme
         Public Image Ltd., qui incluait John Lydon, ancien chanteur du groupe
         emblème du punk rock, les Sex Pistols, peut même être interprétée comme
@@ -85,7 +94,7 @@
         façon inhabituelle de jouer de la guitare et de la batterie ».
       </p>
       <img class="bat" src="/assets/trans_bat.png" alt="bat" />
-      <p class="h_text">
+      <p class="htext" id="hp5">
         Rétrospectivement toutefois, le terme est réutilisé à grande échelle
         pour qualifier des groupes jouant une musique rejoignant certains
         préceptes du punk, sans que pour autant le lien avec le mouvement punk
@@ -103,34 +112,64 @@
         époque (la fin des années 1970), sans pour autant se résumer à n'en être
         qu'une simple excroissance.
       </p>
-      <img src="/assets/the_cure.jpg" alt="The Cure" />
+      <img
+        class="himg"
+        src="/assets/pictures/the_cure.jpg"
+        alt="The Cure"
+        title="The Cure"
+        id="himg3"
+      />
     </section>
 
     <aside id="aside">
-      <img class="logoPlayer" src="/assets/logos/logo_the_cure.jpg" alt="">
-      <p>The Cure</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_siouxie.jpg" alt="">
-      <p>Siouxie and the Banshees</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_bauhaus.jpg" alt="">
-      <p>Bauhaus</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_christian_death.jpg" alt="">
-      <p>Christian Death</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_joy_division.jpg" alt="">
-      <p>Joy Division</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_rosa_crux.jpg" alt="">
-      <p>Rosa+Crux</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_sopor_aeternus.jpg" alt="">
-      <p>Sopor Aeternus and the Ensemble of Shadows</p>
-      <audio controls>Your browser does not support the audio element.</audio>
-      <img class="logoPlayer" src="/assets/logos/logo_cinema_strange.jpg" alt="">
-      <p>Cinema Strange</p>
-      <audio controls>Your browser does not support the audio element.</audio>
+      <div id="cure">
+        <audio src="/assets/music/a_forest.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>The Cure - A Forest</p>
+      </div>
+      <div id="siouxie">
+        <audio src="/assets/music/cities_in_dust.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Siouxie and the Banshees - Cities in Dust</p>
+      </div>
+      <div id="bauhaus">
+        <audio src="/assets/music/bela_lugosi's_dead.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Bauhaus - Beal Lugosi's Dead</p>
+      </div>
+      <div id="christian">
+        <audio src="/assets/music/romeo´s_distress.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Christian Death - Romeo's Distress</p>
+      </div>
+      <div id="joy">
+        <audio src="/assets/music/love_will_tear_us_apart.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Joy Division - Love Will Tear Us Appart</p>
+      </div>
+      <div id="rosa">
+        <audio src="/assets/music/omnes_qvi_descendvnt.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Rosa+Crux - Omnes Qui Descendunt</p>
+      </div>
+      <div id="sopor">
+        <audio src="/assets/music/when_you _love_a_man.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Sopor Aeternus - When You Love a Man</p>
+      </div>
+      <div id="cinema">
+        <audio src="/assets/music/dead_eyes_open.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Cinema Strange - Dead Eyes Open</p>
+      </div>
     </aside>
 
     <footer>
@@ -140,7 +179,11 @@
       <div class="links">
         <img class="shareIcon" src="/assets//icons/icones_partage.png" alt="" />
         <img class="mailIcon" src="/assets/icons/icones_mail.png" alt="" />
-        <img class="facebookIcon" src="/assets/icons/icones_facebook.png" alt="" />
+        <img
+          class="facebookIcon"
+          src="/assets/icons/icones_facebook.png"
+          alt=""
+        />
       </div>
     </footer>
     <script src="index.js"></script>
