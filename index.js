@@ -5,6 +5,7 @@
 //
 //
 //
+const body = document.querySelector("body");
 const lButton = document.querySelector(".navButton");
 const nav = document.getElementById("nav");
 //
@@ -18,9 +19,9 @@ const reset3 = document.querySelector("footer");
 // show and hide navbar
 //
 function updateLeftButton() {
-  if (getComputedStyle(nav).display != "none") {
+  if (nav.style.display != "none") {
     nav.style.display = "none";
-  } else if (getComputedStyle(nav).display == "none") {
+  } else if (nav.style.display == "none") {
     nav.style.display = "block";
     aside.style.display = "none";
   } else {
@@ -32,9 +33,9 @@ function updateLeftButton() {
 // show and hide player
 //
 function updateRightButton() {
-  if (getComputedStyle(aside).display != "none") {
+  if (aside.style.display != "none") {
     aside.style.display = "none";
-  } else if (getComputedStyle(aside).display == "none") {
+  } else if (aside.style.display == "none") {
     aside.style.display = "block";
     nav.style.display = "none";
   } else {
@@ -64,16 +65,11 @@ if (screen.width < 1440) {
 // adapt to resize
 //
 function view() {
-  if (screen.width >= 1440) {
+  if (window.innerWidth >= 1440) {
     aside.style.display = "block";
     nav.style.display = "block";
-  } else if (screen.width < 1440) {
+  } else if (window.innerWidth < 1440) {
     nav.style.display = "none";
     aside.style.display = "none";
-    lButton.addEventListener("click", updateLeftButton);
-    rButton.addEventListener("click", updateRightButton);
-    reset1.addEventListener("click", resetButtons);
-    reset2.addEventListener("click", resetButtons);
-    reset3.addEventListener("click", resetButtons);
   }
 }
