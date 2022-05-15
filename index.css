@@ -129,7 +129,7 @@ nav {
   left: 5vh;
   background-color: rgb(32, 31, 28);
   width: 40%;
-  height: 50vh;
+  height: 0vh;
   border: solid rgb(165, 161, 161) 0.1rem;
   border-radius: 1.5rem;
   /* box-shadow: 0 0 10px, inset 0 0 10px; */
@@ -138,6 +138,10 @@ nav {
   box-shadow: 0 0 20px black;
   z-index: 1;
   transition: 0.5s;
+}
+
+nav:active {
+  height: 50vh;
 }
 
 ul {
@@ -490,6 +494,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding: 0;
+    margin-top: 0;
     height: 80vh;
     width: 15vw;
     padding: 1vh 0;
@@ -668,7 +673,7 @@ footer {
 
   .htext {
     margin: 0 2vh;
-    height: 90%;
+    height: 95%;
   }
 
   .himg {
