@@ -60,7 +60,6 @@ if (screen.width < 1440) {
   reset1.addEventListener("click", resetButtons);
   reset2.addEventListener("click", resetButtons);
   reset3.addEventListener("click", resetButtons);
-  //
 }
 //
 // adapt to resize

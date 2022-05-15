@@ -129,7 +129,7 @@ nav {
   left: 5vh;
   background-color: rgb(32, 31, 28);
   width: 40%;
-  height: 50%;
+  height: 50vh;
   border: solid rgb(165, 161, 161) 0.1rem;
   border-radius: 1.5rem;
   /* box-shadow: 0 0 10px, inset 0 0 10px; */
@@ -137,6 +137,7 @@ nav {
   font-size: 2rem;
   box-shadow: 0 0 20px black;
   z-index: 1;
+  transition: 0.5s;
 }
 
 ul {
@@ -705,7 +706,6 @@ footer {
       "te8 i8"
       "te8 i8b"
       "te8 i8c";
-      width: 40vw;
   }
 
   #btitle1 {
@@ -884,12 +884,17 @@ footer {
     position: sticky;
     top: 5vh;
     right: 0;
-    height: 40vh;
+    height: 35vh;
     width: 15vw;
     padding: 2.5vh;
     border-style: none;
     background-color: rgb(32, 31, 28);
     border-radius: 0.5rem;
+    transition:height 0.5s;
+  }
+
+  aside:hover {
+    height: 75vh;
   }
 
   aside div {
