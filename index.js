@@ -70,8 +70,6 @@ function view() {
     aside.style.display = "block";
     nav.style.display = "block";
   } else if (window.innerWidth < 1440) {
-    nav.style.display = "none";
-    aside.style.display = "none";
     lButton.addEventListener("click", updateLeftButton);
     rButton.addEventListener("click", updateRightButton);
     reset1.addEventListener("click", resetButtons);
