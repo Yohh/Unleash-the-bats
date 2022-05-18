@@ -153,13 +153,13 @@ if (screen.width < 1440) {
   lButton.addEventListener("click", updateLeftButton);
   rButton.addEventListener("click", updateRightButton);
   reset1.addEventListener("click", resetHeaderButtons);
-  reset2.addEventListener("click", resetHeaderButtons && resetFooterButtons);
+  reset2.addEventListener("click", resetHeaderButtons);
+  reset2.addEventListener("click", resetFooterButtons);
   reset3.addEventListener("click", resetHeaderButtons);
   reset4.addEventListener("click", resetFooterButtons);
 } else {
   reset2.addEventListener("click", resetFooterButtons);
   reset4.addEventListener("click", resetFooterButtons);
-
 }
 //
 // adapt to resize
@@ -172,7 +172,8 @@ function view() {
     lButton.addEventListener("click", updateLeftButton);
     rButton.addEventListener("click", updateRightButton);
     reset1.addEventListener("click", resetHeaderButtons);
-    reset2.addEventListener("click", resetHeaderButtons && resetFooterButtons);
+    reset2.addEventListener("click", resetHeaderButtons);
+    reset2.addEventListener("click", resetFooterButtons);
     reset3.addEventListener("click", resetHeaderButtons);
     reset4.addEventListener("click", resetFooterButtons);
   }

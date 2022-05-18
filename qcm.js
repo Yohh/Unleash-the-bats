@@ -108,11 +108,14 @@ const check = () => {
 
   if (count < 10) {
     alert("mécréant... tu ne mérites pas de danser dans nos ténèbres!");
+    window.location.href = window.location.href
   } else if (count > 20) {
     alert(
       "les grands anciens te bénissent, ton âme est aussi noire que le jais"
     );
+    window.location.href = window.location.href
   } else {
     alert("c'est un bon début, va donc sacrifier quelques chatons");
+    window.location.href = window.location.href
   }
 };
