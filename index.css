@@ -610,6 +610,10 @@ footer {
     padding: 0 5vw;
   }
 
+  #redemption .line {
+    width: 30vw;
+  }
+
   #submQuizz {
     width: 10vw;
     height: 7vh;
@@ -1070,6 +1074,10 @@ footer {
 
   #redemption form {
     height: 70vh;
+  }
+
+  #redemption .line {
+    width: 20vw;
   }
 
   #submQuizz {
