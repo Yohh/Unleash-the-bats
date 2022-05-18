@@ -127,9 +127,9 @@ nav {
   position: fixed;
   top: 10vh;
   left: 5vh;
-  background-color: rgb(32, 31, 28);
   width: 40%;
   height: 50vh;
+  background-color: rgb(32, 31, 28);
   border: solid rgb(165, 161, 161) 0.1rem;
   border-radius: 1.5rem;
   /* box-shadow: 0 0 10px, inset 0 0 10px; */
@@ -372,6 +372,65 @@ footer {
   justify-content: space-between;
 }
 
+#CC {
+  display: none;
+  position: fixed;
+  bottom: 12vh;
+  left: 10vw;
+  height: 20vh;
+  width: 70vw;
+  background-color: rgb(32, 31, 28);
+  border: solid rgb(165, 161, 161) 0.1rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+  text-align: center;
+  padding: 2vh;
+}
+
+#share {
+  display: none;
+  position: fixed;
+  bottom: 12vh;
+  right: 10vw;
+  height: 20vh;
+  width: 70vw;
+  background-color: rgb(32, 31, 28);
+  border: solid rgb(165, 161, 161) 0.1rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+  text-align: center;
+  padding: 2vh;
+}
+
+#mail {
+  display: none;
+  position: fixed;
+  bottom: 12vh;
+  right: 10vw;
+  height: 20vh;
+  width: 70vw;
+  background-color: rgb(32, 31, 28);
+  border: solid rgb(165, 161, 161) 0.1rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+  text-align: center;
+  padding: 2vh;
+}
+
+#facebook {
+  display: none;
+  position: fixed;
+  bottom: 12vh;
+  right: 10vw;
+  height: 20vh;
+  width: 70vw;
+  background-color: rgb(32, 31, 28);
+  border: solid rgb(165, 161, 161) 0.1rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+  text-align: center;
+  padding: 2vh;
+}
 /*
 *
 *
@@ -532,7 +591,7 @@ footer {
     padding: 2vh;
   }
 
-    #redemption form {
+  #redemption form {
     background-color: rgb(32, 31, 28, 0.8);
     box-shadow: 0 0 20px black;
     border-radius: 1rem;
@@ -554,9 +613,44 @@ footer {
   #submQuizz {
     width: 10vw;
     height: 7vh;
-    margin: 5vh 22vw;
+    margin: 5vh 35vw;
   }
 
+  #CC {
+    bottom: 12vh;
+    left: 30vw;
+    height: 30vh;
+    width: 40vw;
+    background-color: rgb(32, 31, 28, 0.9);
+    box-shadow: 0 0 20px black;
+  }
+
+  #share {
+    bottom: 12vh;
+    right: 30vw;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgb(32, 31, 28, 0.9);
+    box-shadow: 0 0 20px black;
+  }
+
+  #mail {
+    bottom: 12vh;
+    right: 30vw;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgb(32, 31, 28, 0.9);
+    box-shadow: 0 0 20px black;
+  }
+
+  #facebook {
+    bottom: 12vh;
+    right: 30vw;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgb(32, 31, 28, 0.9);
+    box-shadow: 0 0 20px black;
+  }
   /*
 *
 ******** aside ********
@@ -978,6 +1072,10 @@ footer {
     height: 70vh;
   }
 
+  #submQuizz {
+    margin: 5vh 22vw;
+  }
+
   /*
 *
 ******** aside ********
@@ -996,7 +1094,7 @@ footer {
     border-style: none;
     background-color: rgb(32, 31, 28);
     border-radius: 0.5rem;
-    transition:height 0.5s;
+    transition: height 0.5s;
   }
 
   aside:hover {
@@ -1046,5 +1144,37 @@ footer {
 
   .facebookIcon {
     padding-right: 0;
+  }
+
+  #CC {
+    bottom: 12vh;
+    left: 5vw;
+    height: 10vh;
+    width: 30vw;
+    border: none;
+  }
+
+  #share {
+    bottom: 12vh;
+    right: 5vw;
+    height: 10vh;
+    width: 30vw;
+    border: none;
+  }
+
+  #mail {
+    bottom: 12vh;
+    right: 5vw;
+    height: 10vh;
+    width: 30vw;
+    border: none;
+  }
+
+  #facebook {
+    bottom: 12vh;
+    right: 5vw;
+    height: 10vh;
+    width: 30vw;
+    border: none;
   }
 }

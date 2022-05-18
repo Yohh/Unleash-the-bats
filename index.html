@@ -111,18 +111,25 @@
 
     <footer>
       <div class="CC">
-        <img class="ccIcon" src="/assets/icons/icones_CC.png" alt="" />
+        <img class="ccIcon" src="/assets/icons/icones_CC.png" id="ccButton" onclick="updateCcButton()"/>
       </div>
       <div class="links">
-        <img class="shareIcon" src="/assets//icons/icones_partage.png" alt="" />
-        <img class="mailIcon" src="/assets/icons/icones_mail.png" alt="" />
+        <img class="shareIcon" src="/assets//icons/icones_partage.png" id="shareButton" onclick="updateShareButton()"/>
+        <img class="mailIcon" src="/assets/icons/icones_mail.png" id="mailButton" onclick="updateMailButton()"/>
         <img
           class="facebookIcon"
           src="/assets/icons/icones_facebook.png"
-          alt=""
+          id="facebookButton"
+          onclick="updatefacebookButton()"
         />
       </div>
     </footer>
+
+    <div id="CC">ce site est sous license creative-commons bla bla bla.... les images et vidéos de ce site sont la propriété de leurs auteurs respectifs bla bla.. les informations sont issues de Wikipedia bla..</div>
+    <div id="share">le partage c'est important!</div>
+    <div id="mail">une bonne communication, y a qu'ça d'vrai</div>
+    <div id="facebook">sérieusement?</div>
+
     <script src="index.js"></script>
   </body>
 </html>

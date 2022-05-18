@@ -165,7 +165,7 @@
           </div>
         </div>
         <p class="question">
-          >avant j'étais spooky-boy/girl, je suis passé médiéval(e)-goth mais
+          avant j'étais spooky-boy/girl, je suis passé médiéval(e)-goth mais
           j'ai fini par me lasser, maintenant je suis
           psycho-dark-cyber-trash-ebm-industrial-goth avec option corpo
         </p>
@@ -417,18 +417,25 @@
 
     <footer>
       <div class="CC">
-        <img class="ccIcon" src="/assets/icons/icones_CC.png" alt="" />
+        <img class="ccIcon" src="/assets/icons/icones_CC.png" id="ccButton" onclick="updateCcButton()"/>
       </div>
       <div class="links">
-        <img class="shareIcon" src="/assets//icons/icones_partage.png" alt="" />
-        <img class="mailIcon" src="/assets/icons/icones_mail.png" alt="" />
+        <img class="shareIcon" src="/assets//icons/icones_partage.png" id="shareButton" onclick="updateShareButton()"/>
+        <img class="mailIcon" src="/assets/icons/icones_mail.png" id="mailButton" onclick="updateMailButton()"/>
         <img
           class="facebookIcon"
           src="/assets/icons/icones_facebook.png"
-          alt=""
+          id="facebookButton"
+          onclick="updatefacebookButton()"
         />
       </div>
     </footer>
+
+    <div id="CC">creative-commons</div>
+    <div id="share">partage</div>
+    <div id="mail">mail</div>
+    <div id="facebook">facebook</div>
+    
     <script src="index.js"></script>
     <script src="qcm.js"></script>
   </body>
