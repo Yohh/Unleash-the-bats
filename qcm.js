@@ -23,6 +23,10 @@ const q22 = document.querySelector("#question22");
 const q23 = document.querySelector("#question23");
 const q24 = document.querySelector("#question24");
 const q25 = document.querySelector("#question25");
+const answer = document.querySelector(".answer");
+const answerb = document.querySelector(".answerb");
+const answera = document.querySelector(".answera");
+answer.style.display = "none";
 
 const check = () => {
   console.log();
@@ -107,15 +111,21 @@ const check = () => {
   }
 
   if (count < 10) {
-    alert("mécréant... tu ne mérites pas de danser dans nos ténèbres!");
-    window.location.href = window.location.href
+    answer.style.display = "flex";
+    answera.textContent =
+      "mecreant... tu ne merites pas de danser dans nos tenebres!";
+    answerb.textContent = "punissez-moi!";
   } else if (count > 20) {
-    alert(
-      "les grands anciens te bénissent, ton âme est aussi noire que le jais"
-    );
-    window.location.href = window.location.href
+    answer.style.display = "flex";
+    answera.textContent =
+      "les grands anciens te benissent, ton ame est aussi noire que le jais";
+    answerb.textContent = "je n'en attendais pas moins";
   } else {
-    alert("c'est un bon début, va donc sacrifier quelques chatons");
-    window.location.href = window.location.href
+    answer.style.display = "flex";
+    answera.textContent =
+      "c'est un bon debut, va donc sacrifier quelques chatons";
+    answerb.textContent = "oui maître";
   }
 };
+
+const refresh = () => (window.location.href = window.location.href);
